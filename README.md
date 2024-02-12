@@ -21,9 +21,7 @@ This repository contains the source code for an ATS RESUME MATCHING that helps i
 ## Setup and Usage
 
 Clone the repository:  git clone https://github.com/Hk669/Application-Tracker-System.git
-
 Access the application by navigating to `http://localhost:5000/` in your web browser.
-
 Upload resumes and job descriptions using the provided interface and view the similarity score and selection status.
 
 ## Folder Structure
@@ -32,11 +30,3 @@ Upload resumes and job descriptions using the provided interface and view the si
 - `streamlit_app.py`: Streamlit frontend application file.
 - `templates/index.html`: HTML template for the web interface.
   
-## Contribution
-
-Contributions to the Application Tracker System project are welcome. If you find any bugs, have suggestions for improvements, or want to add new features, please submit an issue or create a pull request.
-
-## License
-
-This project is licensed under the [MIT License].
-
