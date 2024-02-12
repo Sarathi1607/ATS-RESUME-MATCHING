@@ -20,7 +20,7 @@ This repository contains the source code for an ATS RESUME MATCHING that helps i
 
 ## Setup and Usage
 
-Clone the repository:  git clone https://github.com/Hk669/Application-Tracker-System.git
+Clone the repository:  git clone [https://github.com/Hk669/Application-Tracker-System.git](https://github.com/Sarathi1607/ATS-RESUME-MATCHING.git)
 Access the application by navigating to `http://localhost:5000/` in your web browser.
 Upload resumes and job descriptions using the provided interface and view the similarity score and selection status.
 
