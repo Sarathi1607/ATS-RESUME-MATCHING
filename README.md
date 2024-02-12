@@ -1,11 +1,7 @@
-# Application Tracker System 
+# ATS RESUME MATCHING
 
 
-https://github.com/Hk669/Application-Tracker-System/assets/96101829/17f8ea51-8d02-4b60-a69e-2877d0d0ef3c
-
-
-
-This repository contains the source code for an Application Tracker System that helps in analyzing resumes and job descriptions. The system uses natural language processing techniques to calculate the similarity between the resume and job description, allowing for efficient application screening.
+This repository contains the source code for an ATS RESUME MATCHING that helps in analyzing resumes and job descriptions. The system uses natural language processing techniques to calculate the similarity between the resume and job description, allowing for efficient application screening.
 
 ## Features
 
