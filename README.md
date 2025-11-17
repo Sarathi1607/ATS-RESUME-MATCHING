@@ -1,32 +1,178 @@
-# ATS RESUME MATCHING
+# Graphic Design Portfolio Website
 
-
-This repository contains the source code for an ATS RESUME MATCHING that helps in analyzing resumes and job descriptions. The system uses natural language processing techniques to calculate the similarity between the resume and job description, allowing for efficient application screening.
+A modern, interactive portfolio website for graphic designers with email backend functionality and easy content management.
 
 ## Features
 
-- Upload and process resumes and job descriptions.
-- Calculate the similarity score between the uploaded files using cosine similarity.
-- Determine the selection status based on the similarity score threshold.
-- Web interface to access and interact with the ATS.
+- 🎨 **Modern Design** - Beautiful gradient backgrounds, smooth animations, and responsive layout
+- 📧 **Contact Form** - Backend email integration to receive messages directly to your inbox
+- 🖼️ **Interactive Portfolio** - Lightbox gallery with hover effects and category filtering
+- 📱 **Fully Responsive** - Works perfectly on desktop, tablet, and mobile devices
+- ⚡ **Easy Content Management** - Update all content by editing a single JSON file
+- 🎯 **Sections Included**:
+  - Hero section with call-to-action
+  - About section with bio and skills
+  - Services showcase
+  - Portfolio gallery with filters
+  - Contact form with social links
+
+## Setup Instructions
+
+### 1. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Configure Email Settings
+
+Set up environment variables for email functionality:
+
+```bash
+export EMAIL_USER="your-email@gmail.com"
+export EMAIL_PASS="your-app-password"
+```
+
+**For Gmail:**
+1. Enable 2-factor authentication on your Google account
+2. Generate an App Password: https://myaccount.google.com/apppasswords
+3. Use the generated app password (not your regular password)
+
+**Alternative:** Edit `app.py` directly and replace the default values in the configuration section.
+
+### 3. Customize Your Content
+
+Edit `content.json` to update all website content:
+
+- **Personal Information**: Name, title, email, phone, location, bio
+- **Portfolio Projects**: Add/remove projects with images, descriptions, and categories
+- **Services**: Update your service offerings
+- **Skills**: Modify skill levels
+- **Social Links**: Update your social media profiles
+
+### 4. Run the Application
+
+```bash
+python app.py
+```
+
+The website will be available at: `http://localhost:5000`
+
+## Content Management Guide
+
+All content is managed through `content.json`. Here's what you can edit:
+
+### Personal Information
+```json
+"personal": {
+  "name": "Your Name",
+  "title": "Your Title",
+  "email": "your-email@example.com",
+  ...
+}
+```
+
+### Portfolio Projects
+```json
+"portfolio": [
+  {
+    "title": "Project Name",
+    "category": "Category",
+    "description": "Project description",
+    "image": "image-url",
+    "tags": ["tag1", "tag2"]
+  }
+]
+```
+
+### Services
+```json
+"services": [
+  {
+    "icon": "🎨",
+    "title": "Service Name",
+    "description": "Service description"
+  }
+]
+```
+
+### Skills
+```json
+"skills": [
+  { "name": "Skill Name", "level": 95 }
+]
+```
+
+## Project Structure
+
+```
+/vercel/sandbox/
+├── app.py                 # Flask backend with email API
+├── content.json           # All website content (EDIT THIS!)
+├── requirements.txt       # Python dependencies
+├── templates/
+│   └── index.html        # Main HTML template
+└── static/
+    ├── css/
+    │   └── style.css     # Styles and animations
+    └── js/
+        └── script.js     # Interactive functionality
+```
+
+## Customization Tips
+
+1. **Change Colors**: Edit CSS variables in `static/css/style.css` (`:root` section)
+2. **Add More Sections**: Add HTML in `templates/index.html` and style in CSS
+3. **Portfolio Images**: Use high-quality images (recommended: 800x600px)
+4. **Email Provider**: Change SMTP settings in `app.py` for other email providers
+
+## Email Configuration for Different Providers
+
+### Gmail
+```python
+MAIL_SERVER = 'smtp.gmail.com'
+MAIL_PORT = 587
+```
+
+### Outlook/Hotmail
+```python
+MAIL_SERVER = 'smtp-mail.outlook.com'
+MAIL_PORT = 587
+```
+
+### Yahoo
+```python
+MAIL_SERVER = 'smtp.mail.yahoo.com'
+MAIL_PORT = 587
+```
+
+## Troubleshooting
+
+**Email not sending?**
+- Check your email credentials
+- Ensure 2FA is enabled and you're using an app password
+- Check firewall/antivirus settings
+
+**Content not loading?**
+- Verify `content.json` is valid JSON (use a JSON validator)
+- Check browser console for errors
+
+**Styling issues?**
+- Clear browser cache
+- Check that static files are being served correctly
 
 ## Technologies Used
 
-- Python: Used for the backend logic, file processing, and machine learning tasks.
-- Flask: Backend web framework for serving the application.
-- Streamlit: Frontend web framework for the interactive web interface.
-- scikit-learn: Machine learning library for cosine similarity calculation.
-- docx2txt: Library for extracting text from Word documents.
+- **Backend**: Flask (Python)
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Email**: Flask-Mail
+- **Fonts**: Google Fonts (Poppins, Playfair Display)
+- **Images**: Unsplash (placeholder images)
 
-## Setup and Usage
+## License
 
-Clone the respository: git clone https://github.com/Sarathi1607/ATS-RESUME-MATCHING.git
-Access the application by navigating to `http://localhost:5000/` in your web browser.
-Upload resumes and job descriptions using the provided interface and view the similarity score and selection status.
+Free to use for personal and commercial projects.
 
-## Folder Structure
+---
 
-- `app.py`: Backend Flask application file.
-- `streamlit_app.py`: Streamlit frontend application file.
-- `templates/index.html`: HTML template for the web interface.
-  
+**Need help?** Check the code comments or modify `content.json` to get started!
