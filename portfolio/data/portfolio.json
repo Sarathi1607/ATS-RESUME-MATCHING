@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "title": "Creative Graphic Designer",
+    "subtitle": "Bringing Ideas to Life Through Visual Storytelling",
+    "description": "I specialize in creating stunning visual experiences that captivate and inspire. From branding to digital art, I transform concepts into compelling designs."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Passionate graphic designer with over 5 years of experience in creating visually stunning designs. I love combining creativity with technology to produce work that not only looks great but also communicates effectively.",
+    "skills": [
+      "Adobe Creative Suite",
+      "Branding & Identity",
+      "UI/UX Design",
+      "Digital Illustration",
+      "Typography",
+      "Print Design",
+      "Web Design",
+      "Motion Graphics"
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Brand Identity for Tech Startup",
+      "description": "Complete brand identity including logo, color palette, typography, and brand guidelines for a cutting-edge tech startup.",
+      "image": "/images/project1.jpg",
+      "category": "Branding",
+      "tags": ["Logo Design", "Brand Identity", "Typography"]
+    },
+    {
+      "id": 2,
+      "title": "E-commerce Website UI",
+      "description": "Modern and user-friendly interface design for an online fashion retailer, focusing on conversion optimization and user experience.",
+      "image": "/images/project2.jpg",
+      "category": "UI/UX",
+      "tags": ["Web Design", "UI/UX", "E-commerce"]
+    },
+    {
+      "id": 3,
+      "title": "Digital Art Collection",
+      "description": "A series of digital illustrations exploring themes of nature and technology, created using digital painting techniques.",
+      "image": "/images/project3.jpg",
+      "category": "Illustration",
+      "tags": ["Digital Art", "Illustration", "Concept Art"]
+    },
+    {
+      "id": 4,
+      "title": "Magazine Layout Design",
+      "description": "Editorial design for a lifestyle magazine, including cover design, feature layouts, and typography hierarchy.",
+      "image": "/images/project4.jpg",
+      "category": "Print",
+      "tags": ["Editorial Design", "Layout", "Typography"]
+    },
+    {
+      "id": 5,
+      "title": "Motion Graphics for Product Launch",
+      "description": "Animated explainer video for a new product launch, combining 2D animation with live-action footage.",
+      "image": "/images/project5.jpg",
+      "category": "Motion",
+      "tags": ["Animation", "Motion Graphics", "Video"]
+    },
+    {
+      "id": 6,
+      "title": "Packaging Design Series",
+      "description": "Sustainable packaging design for a line of organic skincare products, emphasizing eco-friendly materials and clean aesthetics.",
+      "image": "/images/project6.jpg",
+      "category": "Packaging",
+      "tags": ["Packaging Design", "Sustainability", "Product Design"]
+    }
+  ],
+  "contact": {
+    "title": "Let's Work Together",
+    "description": "I'm always excited to take on new challenges and collaborate on creative projects. Whether you have a specific project in mind or just want to chat about design, I'd love to hear from you.",
+    "email": "your.email@example.com"
+  }
+}
